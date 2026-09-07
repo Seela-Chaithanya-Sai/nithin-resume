@@ -181,67 +181,121 @@ section p {
 
 /* Mobile */
 
-@media (max-width: 700px) {
-
-    body {
-        background: #fff;
-    }
-
-    .resume {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 25px 20px;
-        box-shadow: none;
-    }
-
-    .header {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .contact-info {
-        text-align: left;
-    }
-
-    .skills span {
-        width: 100%;
-    }
-
-    .experience-header,
-    .education-item {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    section p {
-        text-align: left;
-    }
-}
-
-
-/* A4 PDF */
-
 @media print {
 
     @page {
         size: A4;
-        margin: 8mm;
+        margin: 5mm;
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
     body {
-        background: #fff;
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        background: white;
     }
 
     .resume {
-        width: 100%;
+        width: 200mm;
+        min-height: 287mm;
         max-width: none;
         margin: 0;
-        padding: 5px 15px;
+        padding: 8mm 10mm;
+        background: white;
         box-shadow: none;
     }
 
+    .header {
+        padding-bottom: 10px;
+    }
+
+    .header-left h1 {
+        font-size: 27px;
+    }
+
+    .header-left h2 {
+        font-size: 15px;
+    }
+
+    .contact-info {
+        font-size: 10.5px;
+        line-height: 1.4;
+    }
+
     section {
+        margin-top: 12px;
         page-break-inside: avoid;
+    }
+
+    section h3 {
+        font-size: 13px;
+        padding-bottom: 3px;
+        margin-bottom: 6px;
+    }
+
+    section p {
+        font-size: 10.5px;
+        line-height: 1.3;
+    }
+
+    .skills {
+        gap: 4px 12px;
+    }
+
+    .skills span {
+        font-size: 10.5px;
+    }
+
+    .experience-header h4,
+    .project h4,
+    .education-item h4 {
+        font-size: 11.5px;
+    }
+
+    .experience-header span,
+    .education-item > span {
+        font-size: 10px;
+    }
+
+    .experience li,
+    .project li {
+        font-size: 10px;
+        line-height: 1.25;
+        margin-bottom: 2px;
+    }
+
+    .project {
+        margin-bottom: 7px;
+    }
+
+    .education-item {
+        margin-bottom: 6px;
+    }
+
+    .education-item p {
+        font-size: 10px;
+    }
+
+    .strengths {
+        gap: 4px;
+    }
+
+    .strengths span {
+        padding: 2px 6px;
+        font-size: 9.5px;
+    }
+
+    .declaration {
+        margin-top: 10px;
+    }
+
+    .signature {
+        margin-top: 8px;
     }
 }
