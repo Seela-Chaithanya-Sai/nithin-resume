@@ -1,0 +1,379 @@
+css
+/* ==============================
+   BASIC RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   BODY
+================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9ecef;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   RESUME CONTAINER
+================================ */
+
+.resume {
+    width: 850px;
+    max-width: 95%;
+    margin: 40px auto;
+    background: white;
+    padding: 45px 55px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 25px;
+    border-bottom: 3px solid #222;
+}
+
+
+.header-left h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+.header-left h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+}
+
+
+.contact-info {
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   SECTIONS
+================================ */
+
+section {
+    margin-top: 25px;
+}
+
+
+section h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+
+section p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/* ==============================
+   SKILLS
+================================ */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.skills div {
+    font-size: 14px;
+}
+
+
+.skills strong {
+    display: inline-block;
+    width: 155px;
+}
+
+
+.skills span {
+    color: #444;
+}
+
+
+/* ==============================
+   PROJECTS
+================================ */
+
+.project {
+    margin-bottom: 20px;
+}
+
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.project-title h4 {
+    font-size: 15px;
+}
+
+
+.project-title span {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+}
+
+
+.project ul {
+    margin-top: 7px;
+    padding-left: 20px;
+}
+
+
+.project li {
+    font-size: 13.5px;
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   EDUCATION
+================================ */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.education-item h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+
+.education-item p {
+    font-size: 13px;
+    color: #555;
+}
+
+
+.date {
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* ==============================
+   CERTIFICATIONS
+================================ */
+
+.certifications {
+    padding-left: 20px;
+}
+
+
+.certifications li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   STRENGTHS
+================================ */
+
+.strengths {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.strengths span {
+    border: 1px solid #555;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+
+/* ==============================
+   DECLARATION
+================================ */
+
+.declaration {
+    margin-top: 30px;
+}
+
+
+.signature {
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   PRINT BUTTON
+================================ */
+
+.print-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.print-button button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.print-button button:hover {
+    background: #444;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        background: #fff;
+    }
+
+
+    .resume {
+        width: 100%;
+        max-width: none;
+        padding: 28px 20px;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .contact-info {
+        text-align: left;
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+
+    .header-left h1 {
+        font-size: 27px;
+    }
+
+
+    .project-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+
+    .education-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    .skills strong {
+        width: auto;
+        display: block;
+    }
+
+
+    .skills span {
+        display: block;
+        overflow-wrap: anywhere;
+    }
+
+
+    section p {
+        text-align: left;
+    }
+
+
+    .print-button button {
+        width: 100%;
+    }
+
+}
+
+
+/* ==============================
+   PRINT / PDF
+================================ */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+
+    .resume {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 25px 35px;
+        box-shadow: none;
+    }
+
+
+    .print-button {
+        display: none;
+    }
+
+
+    section {
+        page-break-inside: avoid;
+    }
+
+}
